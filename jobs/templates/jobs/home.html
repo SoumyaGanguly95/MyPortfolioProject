@@ -82,9 +82,9 @@
       <p>My Jobs</p>
       <div class="row">
         {% for job in jobs.all %}
-        <div class="col-md-4">
+        <div class="col-md-4" >
           <div class="card mb-4 shadow-sm">
-            <img class="card-image-top" src="{{job.image.url}}" width = 300 height = 200/>
+            <img class = 'img-fluid'  class="card-image-top" src="{{job.image.url}}" />
             <div class="card-body">
               <p class="card-text">{{job.summary}}</p>
             </div>
@@ -95,16 +95,16 @@
     </div>
   </div>
 
-  <div class="album py-5 bg-light">
+  <div class="album py-5 bg-gray">
     <div class="container">
       <p>My Projects</p>
       <div class="row">
-        {% for job in jobs.all %}
+        {% for project in projects.all %}
         <div class="col-md-4">
-          <div class="card mb-4 shadow-sm">
-            <img class="card-image-top" src="{{job.image.url}}" width = 300 height = 200/>
+          <div class="card mb-4 shadow-sm" >
+            <img  class = 'img-fluid' class="card-image-top" src="{{project.image.url}}" style="height : 12rem ;"/>
             <div class="card-body">
-              <p class="card-text">{{job.summary}}</p>
+              <a href = "{% url 'detail' project.id %}" class="card-text" style="height: 2rem ";>{{project.title}}</a>
             </div>
           </div>
         </div>
