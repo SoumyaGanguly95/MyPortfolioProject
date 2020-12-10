@@ -1,0 +1,1 @@
+This project is actually attempts in building a web application , to host your iportfolio. The website project has each module of your portfolio segregated into separate distinct apps and the backend framework used is Django 3. We have stored the data in a postgres database.
