@@ -57,7 +57,7 @@
                 <a class="nav-link" href="https://www.linkedin.com/in/soumya-ganguly-8966a518b/">LinkedIn</a>
                 <a class="nav-link" href="{% static 'SoumyaResume4thDec.pdf'%}">Resume</a>
                 <a class="nav-link" href="https://github.com/SoumyaGanguly95">GitHub</a>
-                <a class="nav-link active" href="{% url 'allblogs' %}">Blog</a>
+                <a class="nav-link" href="{% url 'allblogs' %}">Blog</a>
             </div>
         </div>
     </nav>
@@ -67,11 +67,11 @@
 <main role="main">
     <div class = 'container'>
 
-        <h1 class="text-center pt-3">{{ projects.title }}</h1>
-        <img class="img-fluid" src="{{ projects.image.url }}"  />
+        <h1 class="text-center pt-3">{{ project.title }}</h1>
+        <img class="img-fluid" src="{{ project.image.url }}"  />
         <br />
         <br />
-        <p>{{ projects.body }}</p>
+        <p>{{ project.body }}</p>
     </div>
 </main>
 

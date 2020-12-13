@@ -6,10 +6,8 @@ class Project(models.Model):
     body = models.TextField()
     image = models.ImageField(upload_to='images/')
 
+    def summary(self):
+        return self.body[:100]
 
-def summary(self):
-    return self.body[:100]
-
-
-def __str__(self):
-    return self.title
+    def __str__(self):
+        return self.title

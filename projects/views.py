@@ -9,6 +9,6 @@ def allProjects(request):
     return render(request, 'MyPortfolio/jobs/templates/jobs/home.html', {'project': project})
 
 
-def detail(request, project_id):
+def ProjDetail(request, project_id):
     detailprojects = get_object_or_404(Project, pk=project_id)
     return render(request, 'projects/projectDetail.html', {'project': detailprojects})
